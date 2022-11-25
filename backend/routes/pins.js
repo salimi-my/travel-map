@@ -3,7 +3,6 @@ const Pin = require('../models/Pin');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
 
-dotenv.config({ path: '.env.local' });
 dotenv.config();
 
 const verify = (req, res, next) => {

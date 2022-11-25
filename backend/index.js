@@ -5,7 +5,6 @@ const app = express();
 const userRoute = require('./routes/users');
 const pinRoute = require('./routes/pins');
 
-dotenv.config({ path: '.env.local' });
 dotenv.config();
 
 app.use(express.json());
