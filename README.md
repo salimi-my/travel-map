@@ -13,6 +13,7 @@ This a simple travel map app created with MERN. User can register, login and add
 - MERN
 - JWT Authentication
 - Mapbox
+- Tailwind CSS
 
 ## Starting the project
 
