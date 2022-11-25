@@ -18,7 +18,7 @@ This a simple travel map app created with MERN. User can register, login and add
 
 #### Backend
 
-To start the backend open the [.env.local.example](/backend/.env.local.example) and fill in your MongoDB URL & secret key then save it as .env.local the run the following command:
+To start the backend open the [.env.example](/backend/.env.example) and fill in your MongoDB URL & secret key then save it as .env the run the following command:
 
 ```bash
 npm start
