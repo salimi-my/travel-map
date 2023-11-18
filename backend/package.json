@@ -1,19 +1,28 @@
 {
   "dependencies": {
-    "bcrypt": "^5.1.0",
-    "dotenv": "^16.0.3",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.7.3",
-    "nodemon": "^2.0.20"
+    "mongoose": "^6.12.3",
+    "nodemon": "^2.0.22"
   },
   "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon index.js"
   },
   "author": "Mohamad Salimi",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "pnpm": {
+    "overrides": {
+      "jsonwebtoken@<=8.5.1": ">=9.0.0",
+      "jsonwebtoken@<9.0.0": ">=9.0.0",
+      "semver@>=7.0.0 <7.5.2": ">=7.5.2"
+    }
+  }
 }
