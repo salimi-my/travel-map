@@ -1,10 +1,13 @@
-const router = require('express').Router();
-const User = require('../models/User');
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
-const dotenv = require('dotenv');
+import bcrypt from 'bcrypt';
+import express from 'express';
+import jwt from 'jsonwebtoken';
+import * as dotenv from 'dotenv';
+
+import User from '../models/User.js';
 
 dotenv.config();
+
+const router = express.Router();
 
 // register
 router.post('/register', async (req, res) => {
@@ -69,4 +72,4 @@ router.post('/login', async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

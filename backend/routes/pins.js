@@ -1,9 +1,12 @@
-const router = require('express').Router();
-const Pin = require('../models/Pin');
-const jwt = require('jsonwebtoken');
-const dotenv = require('dotenv');
+import express from 'express';
+import jwt from 'jsonwebtoken';
+import * as dotenv from 'dotenv';
+
+import Pin from '../models/Pin.js';
 
 dotenv.config();
+
+const router = express.Router();
 
 const verify = (req, res, next) => {
   const authHeader = req.headers.authorization;
@@ -40,7 +43,7 @@ router.post('/', verify, async (req, res) => {
 });
 
 // get all pins
-router.get('/', async (req, res) => {
+router.get('/', async (_, res) => {
   try {
     const pins = await Pin.find();
     res.status(200).json(pins);
@@ -49,4 +52,4 @@ router.get('/', async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
