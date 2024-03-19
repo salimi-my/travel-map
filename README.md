@@ -39,7 +39,7 @@ yarn start
 
 ## Demo
 
-Host the project anywhere you want. [Click here](https://travel.salimi.my) to visit.
+Hosted privately on personal DigitalOcean Droplet. [Click here](https://travel.salimi.my) to visit.
 <br>
 Direct link: `https://travel.salimi.my`
 
